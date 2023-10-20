@@ -11,6 +11,11 @@
   <div class="m-2">
     <a class="h3 text-decoration-none text-primary" th:href="@{/users/new}">Add new user</a>
   </div>
+
+  <div th:if="${message}" class="alert alert-success">
+    [[${message}]]
+  </div>
+
   <div>
     <table class="table table-bordered">
       <thead class="table-dark">
